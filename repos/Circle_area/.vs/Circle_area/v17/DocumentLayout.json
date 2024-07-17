@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\m7ama\\source\\repos\\Circle_area\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{971A959C-F12E-4F3E-9D80-F5AFC4E0CF0B}|Circle_area\\Circle_area.vcxproj|C:\\Users\\m7ama\\source\\repos\\Circle_area\\Circle_area\\Circle_area.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{971A959C-F12E-4F3E-9D80-F5AFC4E0CF0B}|Circle_area\\Circle_area.vcxproj|solutionrelative:Circle_area\\Circle_area.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Circle_area.cpp",
+              "DocumentMoniker": "C:\\Users\\m7ama\\source\\repos\\Circle_area\\Circle_area\\Circle_area.cpp",
+              "RelativeDocumentMoniker": "Circle_area\\Circle_area.cpp",
+              "ToolTip": "C:\\Users\\m7ama\\source\\repos\\Circle_area\\Circle_area\\Circle_area.cpp",
+              "RelativeToolTip": "Circle_area\\Circle_area.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-11T11:31:06.901Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

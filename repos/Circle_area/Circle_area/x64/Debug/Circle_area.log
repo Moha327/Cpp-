@@ -1,0 +1,4 @@
+﻿  Circle_area.cpp
+C:\Users\m7ama\source\repos\Circle_area\Circle_area\Circle_area.cpp(9,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\m7ama\source\repos\Circle_area\Circle_area\Circle_area.cpp(17,14): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Circle_area.vcxproj -> C:\Users\m7ama\source\repos\Circle_area\x64\Debug\Circle_area.exe
