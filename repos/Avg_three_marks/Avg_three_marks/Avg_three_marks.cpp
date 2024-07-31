@@ -3,9 +3,30 @@
 
 #include <iostream>
 using namespace std;
+void Read_Marks(unsigned short int& mark1, unsigned short int& mark2, unsigned short int& mark3) {
+    cout << "Please enter mark 1:\n";
+    cin >> mark1;
+    cout << "Please enter mark 2:\n";
+    cin >> mark2;
+    cout << "Please enter mark 3:\n";
+    cin >> mark3;
+    
+}
+
+unsigned short int Calculate_Sum_Marks(unsigned short int mark1, unsigned short int mark2, unsigned short int mark3) {
+    return mark1 + mark2 + mark3;
+}
+
+float Calculate_Avg_Sum_Marks(float sum) {
+    return float(sum) / 3;
+}
+
+void print_avg(float sum) {
+    cout<<sum<<endl;
+}
 int main()
 {
-    unsigned short int mark1;
+    /*unsigned short int mark1;
     unsigned short int mark2;
     unsigned short int mark3;
     cout << "Enter mark1:"<<endl;
@@ -14,7 +35,12 @@ int main()
     cin >> mark2;
     cout << "Enter mark3:" << endl;
     cin >> mark3;
-    cout << "The average of 3 marks is:" << (mark1 + mark2 + mark3) / 3 << endl;
+    cout << "The average of 3 marks is:" << (mark1 + mark2 + mark3) / 3 << endl;*/
+    unsigned short int mark1;
+    unsigned short int mark2;
+    unsigned short int mark3;
+    Read_Marks(mark1, mark2, mark3);
+    print_avg(Calculate_Avg_Sum_Marks(Calculate_Sum_Marks(mark1, mark2, mark3)));
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
