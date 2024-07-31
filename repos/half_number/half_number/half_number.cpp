@@ -2,13 +2,26 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
+unsigned short int Enter_Number() {
+    unsigned short int number;
+    cout << "Enter num please" << endl;
+    cin >> number;
+    return number;
+}
+float Calculate_Half_Number(unsigned short int number) {
+    return float(number) / 2;
+}
+void Print_Half_Number(unsigned short int number) {
+    string Result;
+    Result = "Half of "+ to_string(number)+ " is "+to_string(Calculate_Half_Number(number));
+    cout << endl << Result << endl;
+}
 int main()
 {
-    int num;
-    cout << "Enter num please" << endl;
-    cin >> num;
-    cout << "half of: "<< num << " is " << num / 2 << endl;
+    Print_Half_Number(Enter_Number());
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
