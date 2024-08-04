@@ -2,33 +2,43 @@
 //
 
 #include <iostream>
-
 using namespace std;
-void ReadNumber(int& num) {
-    cout << "Enter number you need from 1 to 100" << endl;
-    cin >> num;
-    if (num > 100 || num < 1) {
-        ReadNumber(num);
-    }
-    else {
-        for (int i = num; i >0; i--) {
-            if (i % 10 == 0) {
-                cout << i << endl;
-            }
-            else {
-                cout << i << "\n";
-            }
-        }
-    }
-
+unsigned short int Read_Number() {
+    unsigned short int N;
+    cout << "Pleae enter number that you want:\n";
+    cin >> N;
+    return N;
 }
-int PrintNum(int num) {
-    ReadNumber(num);
-    return 0;
+void Print_Numbers(unsigned short int N) {
+    for (unsigned short int i = 1; i < N + 1; i++) {
+        cout << i << "\t";
+    }
 }
+//void ReadNumber(int& num) {
+//    cout << "Enter number you need from 1 to 100" << endl;
+//    cin >> num;
+//    if (num > 100 || num < 1) {
+//        ReadNumber(num);
+//    }
+//    else {
+//        for (int i = num; i >0; i--) {
+//            if (i % 10 == 0) {
+//                cout << i << endl;
+//            }
+//            else {
+//                cout << i << "\n";
+//            }
+//        }
+//    }
+//
+//}
+//int PrintNum(int num) {
+//    ReadNumber(num);
+//    return 0;
+//}
 int main()
 {
-    int num;
+    /*int num;*/
     /*cout << "Enter number you need from 1 to 100" << endl;*/
     /*cin >> num;
     for (int i = num; i >0; i--) {
@@ -39,8 +49,9 @@ int main()
             cout << i << "\n";
         }
     }*/
-    ReadNumber(num);
-    cout << PrintNum(num) << endl;
+    /*ReadNumber(num);
+    cout << PrintNum(num) << endl;*/
+    Print_Numbers(Read_Number());
 
 }
 
