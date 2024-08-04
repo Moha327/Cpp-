@@ -4,29 +4,47 @@
 #include <iostream>
 using namespace std;
 
-void ReadNumber(int& num) {
-    cin >> num;
+//void ReadNumber(int& num) {
+//    cin >> num;
+//}
+//
+//unsigned long long CalculateFactorial(int num) {
+//    
+//    long Factorial =1.0;
+//    for (int i = 1; i <= num-1; i++) {
+//        Factorial *= i;
+//    }
+//    return Factorial;
+//}
+//
+//void PrintFactorialOfNumber() {
+//    int num;
+//    ReadNumber(num);
+//    long factorial = CalculateFactorial(num);
+//    cout << "Factorial of " << num << " is " << factorial << endl;
+//}
+unsigned short int Read_Number() {
+    unsigned short int N;
+    cout << "Pleae enter number that you want:\n";
+    cin >> N;
+    return N;
 }
-
-unsigned long long CalculateFactorial(int num) {
-    
-    long Factorial =1.0;
-    for (int i = 1; i <= num-1; i++) {
-        Factorial *= i;
+int Find_Factorial_Numbers(unsigned short int N) {
+    unsigned short int result;
+    result = N;
+    for (unsigned short int i = N - 1; i > 0; i--) {
+        result *= i;
     }
-    return Factorial;
+    return result;
 }
-
-void PrintFactorialOfNumber() {
-    int num;
-    ReadNumber(num);
-    long factorial = CalculateFactorial(num);
-    cout << "Factorial of " << num << " is " << factorial << endl;
+void Print_Factorial(unsigned short int result) {
+    cout << "Factorial number is: " << result << endl;
 }
-
 int main() {
-    cout << "Enter number please:\n";
+    /*cout << "Enter number please:\n";
     PrintFactorialOfNumber();
+    return 0;*/
+    Print_Factorial(Find_Factorial_Numbers(Read_Number()));
     return 0;
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
