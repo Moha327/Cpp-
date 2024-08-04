@@ -5,20 +5,36 @@
 #include <cmath>
 using namespace std;
 
-void circleareaprocedur(float r) {
-    float PI = 3.14;
-    cout << "Circile area is: " << ceil(PI * pow(r, 2)) << endl;
+void Read_numbers(unsigned short int& r) {
+    cout << "Enter r of circle:\n";
+    cin >> r;
 }
+
+float Calculate_Circle_Area(unsigned short int r) {
+    float PI = 3.14;
+    return PI * r * r;
+}
+void Print_Circle_Area(float Area) {
+    cout << "Rectangle area is: " << Area << endl;
+}
+
+//void circleareaprocedur(float r) {
+//    float PI = 3.14;
+//    cout << "Circile area is: " << ceil(PI * pow(r, 2)) << endl;
+//}
 
 
 int main()
 {
-    float r;
+    /*float r;
     float PI = 3.14;
     cout << "Enter r:"<<endl;
     cin >> r;
-    circleareaprocedur(r);
- 
+    circleareaprocedur(r);*/
+    // Write C++ code here
+    unsigned short int r;
+    Read_numbers(r);
+    Print_Circle_Area(Calculate_Circle_Area(r));
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
