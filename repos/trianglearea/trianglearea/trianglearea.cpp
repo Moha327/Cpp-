@@ -2,16 +2,36 @@
 //
 
 #include <iostream>
+#include <cmath>
 using namespace std;
+
+void Read_numbers(unsigned short int& construction, unsigned short int& height) {
+    cout << "Enter construction of rectangle:\n";
+    cin >> construction;
+    cout << "Enter height of rectangle:\n";
+    cin >> height;
+}
+
+float Calculate_Rectangle_Area(unsigned short int construction, unsigned short int height) {
+    return .5 * construction * height;
+}
+void Print_Rectangle_Area(float Area) {
+    cout << "Rectangle area is: " << Area << endl;
+}
+
 int main()
 {
-    unsigned short int a;
+    /*unsigned short int a;
     unsigned short int b;
     cout << "Enter height:" << endl;
     cin >> a;
     cout << "Enter width:" << endl;
     cin >> b;
-    cout << "Triangle area is: " << .5 * a * b  << endl;
+    cout << "Triangle area is: " << .5 * a * b  << endl;*/
+    unsigned short int construction;
+    unsigned short int height;
+    Read_numbers(construction, height);
+    Print_Rectangle_Area(Calculate_Rectangle_Area(construction, height));
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
