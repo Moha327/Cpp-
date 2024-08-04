@@ -5,17 +5,34 @@
 #include <cmath>
 using namespace std;
 
-void circle_area_along_the_circumference(unsigned int Length) {
-    float Pi = 3.14;
-    cout << "circulararea is: " << (Length * Length) / (4 * Pi) << endl;
-    cout << "floor of circulararea is: " << floor((Length * Length) / (4 * Pi)) << endl;
+void Read_numbers(unsigned short int& L) {
+    cout << "Enter L of circle:\n";
+    cin >> L;
 }
+
+float Calculate_Circle_Area_Along_The_Circumference(unsigned short int L) {
+    float PI = 3.140;
+    return pow(L, 2) / (4 * PI);
+}
+void Print_Circle_Area_Along_The_Circumference(float Area) {
+    cout << "Circle area is: " << Area << endl;
+}
+
+
+//void circle_area_along_the_circumference(unsigned int Length) {
+//    float Pi = 3.14;
+//    cout << "circulararea is: " << (Length * Length) / (4 * Pi) << endl;
+//    cout << "floor of circulararea is: " << floor((Length * Length) / (4 * Pi)) << endl;
+//}
 int main()
 {
-    unsigned int Length;
+    /*unsigned int Length;
     cout << "Enter diameter: " << endl;
     cin >> Length;
-    circle_area_along_the_circumference(Length);
+    circle_area_along_the_circumference(Length);*/
+    unsigned short int L;
+    Read_numbers(L);
+    Print_Circle_Area_Along_The_Circumference(Calculate_Circle_Area_Along_The_Circumference(L));
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
