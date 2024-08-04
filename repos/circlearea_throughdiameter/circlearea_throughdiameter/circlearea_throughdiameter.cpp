@@ -5,20 +5,38 @@
 #include <cmath>
 using namespace std;
 
-void circleareathroughdiameter(unsigned int diameters) {
-    float Pi = 3.14;
-    cout << "circulararea is: " << .250 * (Pi * diameters * diameters) << "\n";
-    cout << "Ceil of circulararea: " << ceil(.250 * (Pi * diameters * diameters)) << "\n";
+void Read_numbers(unsigned short int& D) {
+    cout << "Enter D of circle:\n";
+    cin >> D;
 }
+
+float Calculate_Circle_Area_Through_Diameter(unsigned short int D) {
+    float PI = 3.14;
+    return (PI * pow(D, 2)) / 4;
+}
+void Print_Circle_Area_Through_Diameter(float Area) {
+    cout << "Circle_Area_Through_Diameter: " << Area << endl;
+}
+
+
+//void circleareathroughdiameter(unsigned int diameters) {
+//    float Pi = 3.14;
+//    cout << "circulararea is: " << .250 * (Pi * diameters * diameters) << "\n";
+//    cout << "Ceil of circulararea: " << ceil(.250 * (Pi * diameters * diameters)) << "\n";
+//}
 int main()
 {
 
-    unsigned int diameters;
+   /* unsigned int diameters;
 
     cout << "Enter diameter: " << endl;
     cin >> diameters;
     
-    circleareathroughdiameter(diameters);
+    circleareathroughdiameter(diameters);*/
+    unsigned short int D;
+    Read_numbers(D);
+    Print_Circle_Area_Through_Diameter(Calculate_Circle_Area_Through_Diameter(D));
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
