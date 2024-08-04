@@ -3,31 +3,48 @@
 
 #include <iostream>
 using namespace std;
-void ReadNumber(int& num) {
-    cout << "Enter num from 1 to 100 please:\n";
-    cin >> num;
-    if (num < 1 || num>100) {
-        ReadNumber(num);
-    }
+//void ReadNumber(int& num) {
+//    cout << "Enter num from 1 to 100 please:\n";
+//    cin >> num;
+//    if (num < 1 || num>100) {
+//        ReadNumber(num);
+//    }
+//}
+//
+//int PrintSumNum(int num) {
+//    int sum = 0;
+//    for (int i = 1; i <= num; i++) {
+//        if (i % 2 == 0) {
+//            sum += i;
+//        }
+//    } 
+//    return sum;
+//}
+unsigned short int Read_Number() {
+    unsigned short int N;
+    cout << "Pleae enter number that you want:\n";
+    cin >> N;
+    return N;
 }
-
-int PrintSumNum(int num) {
-    int sum = 0;
-    for (int i = 1; i <= num; i++) {
-        if (i % 2 == 0) {
+unsigned short int Find_Even_Numbers(unsigned short int N) {
+    unsigned short int sum=0;
+    for (unsigned short int i = 1; i < N + 1; i++) {
+        if (i % 2 == 0)
             sum += i;
-        }
-    } 
+    }
     return sum;
 }
-
+void Print_Sum(unsigned short int sum) {
+    cout << "Sum of even numbers is: " << sum << endl;
+}
 int main()
 {
-    int num;
+    /*int num;
     ReadNumber(num);
     cout<<PrintSumNum(num)<<endl;
+    return 0;*/
+    Print_Sum(Find_Even_Numbers(Read_Number()));
     return 0;
-    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
